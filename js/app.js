@@ -11,7 +11,7 @@
   var db = new PouchDB('todos');
 
   // Replace with remote instance, this just replicates to another local instance.
-  var remoteCouch = 'https://cf690ac1-0ddc-44cf-af32-26d20f15059e-bluemix:ebb52c0d6b2bfad205c06348e06b3c63b870c0d5f1a0d63424c5b91d3652a952@cf690ac1-0ddc-44cf-af32-26d20f15059e-bluemix.cloudantnosqldb.appdomain.cloud';
+  var remoteCouch = 'https://cf690ac1-0ddc-44cf-af32-26d20f15059e-bluemix:ebb52c0d6b2bfad205c06348e06b3c63b870c0d5f1a0d63424c5b91d3652a952@cf690ac1-0ddc-44cf-af32-26d20f15059e-bluemix.cloudantnosqldb.appdomain.cloud/todos';
 
   db.changes({
     since: 'now',
